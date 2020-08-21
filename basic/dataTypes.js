@@ -57,6 +57,26 @@ console.log(`Suma de numero y boolean: ${typeof(sumaNumeroyBoolean)} y el valor 
 let cadenaNumer = '34';
 console.log(parseInt(cadenaNumer) + 1);
 
+// declaracion de objetos
+let actor = {
+    name: 'Julio',
+    age: 46
+};
+
+console.log(actor);
+
+// acceso a las propiedades
+
+// acceso usando notacion corchetes []
+console.log(`Nombre de actor ${actor['name']}`);
+
+// acceso usando notacion punto objeto.propiedad
+console.log(`Nombre de actor ${actor.age}`);
+
+
+
+
+
 
 
 
