@@ -1,0 +1,35 @@
+
+const saveThePrisioner = (n,m,s) =>{
+    let nro=0;
+
+    if(n===1){
+        nro = 1;
+    }else{
+        if(s<=n){
+            if(m<n){
+                nro = m+s-1;
+            }else{
+                nro = m%n + s -1;
+            }
+        }else{
+            console.log(" No existe el prisionero nro " + s);
+        }
+    }
+    return nro;
+}
+/*
+console.log(saveThePrisioner(5,2,1));
+console.log(saveThePrisioner(7,19,2));
+console.log(saveThePrisioner(3,7,3));
+console.log(saveThePrisioner(3,7,4));
+*/
+console.log(saveThePrisioner(1,1,1) === 1);
+console.log(saveThePrisioner(5,2,1) === 2);
+console.log(saveThePrisioner(5,2,2) === 3);
+console.log(saveThePrisioner(3,7,3) === 3);
+console.log(saveThePrisioner(7,19,2) === 6);
+console.log(saveThePrisioner(352926151, 380324688, 94730870) === 122129406);
+console.log(saveThePrisioner(352926151, 380324688, 94730870) === 122129406);
+console.log(saveThePrisioner(3,7,4));
+console.log(saveThePrisioner(353972922, 573651462, 244520504)); // === 110226121);
+
